@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 import time
 
 # Load the CSV file
-csv_file = r"C:\Users\PC\Downloads\Untitled spreadsheet - Sheet1.csv"
+csv_file = r"csv_file"
 data = pd.read_csv(csv_file)
 
 # Email account credentials
@@ -39,19 +39,7 @@ try:
         # Customize your email content with the recipient's first name
         email_body = f"""
         {preview_text}
-        <p>Hey {first_name},</p>
-
-        <p>Could you handle another 5 quotes right now?</p>
-
-        <p>I’m Tobi, and I run HueLeads, a digital marketing agency based in Birmingham that helps painters and decorators like you get at least 5 quote-ready leads a month.</p>
-
-        <p>I’ll be straight with you - I’m just starting out, and I’m looking to build up some testimonials. That’s why I’m offering to do all this for free. No strings attached - just to help you out and see if it’s something you’d be interested in.</p>
-
-        <p>Would you be opposed to a quick 15-minute chat? I’ll walk you through the proven strategy, and even if you decide it’s not for you, you can take the plan and run with it.</p>
-
-        <p>Let me know what you think!</p>
-
-        <p>Cheers,<br>Tobi.</p>
+        Your custom email text here...
         """
 
         # Attach the email body to the message
